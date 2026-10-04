@@ -1,6 +1,6 @@
 # IPTV Android App
 
-## imagine is u can show livw tv channels in ur phone without any subscription yes its possible using IPTV.
+### imagine that u can show live tv channels all over the world specifically india bu default in ur phone without any subscription yes its possible using IPTV.
 
 ## How to Install
 
