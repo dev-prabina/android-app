@@ -1,5 +1,7 @@
 # IPTV Android App
 
+## imagine is u can show livw tv channels in ur phone without any subscription yes its possible using IPTV.
+
 ## How to Install
 
 1. Download the APK file on your Android phone from [Direct APK Download](https://github.com/dev-prabina/android-app/releases/download/v1.0.0/app-debug.apk).
