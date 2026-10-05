@@ -4,7 +4,7 @@
 
 ## How to Install
 
-1. Download the APK file on your Android phone from [Direct APK Download](https://github.com/dev-prabina/android-app/releases/download/v1.0.0/app-debug.apk).
+1. Download the APK file on your Android phone from [Direct APK Download](https://github.com/dev-prabina/android-app/releases/latest/download/app-debug.apk).
 2. Open the downloaded APK file.
 3. If your phone asks, allow "Install unknown apps" from your browser or file manager settings.
 4. Tap **Install**.
@@ -19,8 +19,9 @@ Scan this QR code with your phone to download the app:
 
 ![Download APK QR Code](docs/download-qr.png)
 
-Direct download link:
-[https://github.com/dev-prabina/android-app/releases/download/v1.0.0/app-debug.apk](https://github.com/dev-prabina/android-app/releases/download/v1.0.0/app-debug.apk)
+Direct download links:
+* **[Download Latest APK (Direct)](https://github.com/dev-prabina/android-app/releases/latest/download/app-debug.apk)**
+* [Download v1.0.0 APK](https://github.com/dev-prabina/android-app/releases/download/v1.0.0/app-debug.apk)
 
 ## About the App
 
