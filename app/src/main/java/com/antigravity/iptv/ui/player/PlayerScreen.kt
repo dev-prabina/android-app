@@ -344,7 +344,7 @@ fun PlayerScreen(
         }
 
         // Buffering / Loading Indicator
-        if (playbackStatus == PlaybackStatus.BUFFERING) {
+        if (playbackStatus.isBufferingOrConnecting) {
             Box(
                 modifier = Modifier.fillMaxSize(),
                 contentAlignment = Alignment.Center
@@ -362,7 +362,11 @@ fun PlayerScreen(
                     )
                     Spacer(modifier = Modifier.height(12.dp))
                     Text(
-                        text = "Connecting to live stream...",
+                        text = when (playbackStatus) {
+                            PlaybackStatus.CONNECTING -> "Connecting to live stream..."
+                            PlaybackStatus.RECOVERING -> "Recovering live broadcast..."
+                            else -> "Buffering stream..."
+                        },
                         color = Color.White,
                         style = MaterialTheme.typography.bodyMedium
                     )

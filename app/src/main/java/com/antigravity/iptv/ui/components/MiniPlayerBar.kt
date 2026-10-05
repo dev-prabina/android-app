@@ -132,7 +132,12 @@ fun MiniPlayerBar(
                         )
                     }
                     Text(
-                        text = if (playbackStatus == PlaybackStatus.BUFFERING) "Buffering..." else channel.groupTitle,
+                        text = when (playbackStatus) {
+                            PlaybackStatus.CONNECTING -> "Connecting..."
+                            PlaybackStatus.BUFFERING -> "Buffering..."
+                            PlaybackStatus.RECOVERING -> "Recovering..."
+                            else -> channel.groupTitle
+                        },
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                         maxLines = 1,
@@ -141,7 +146,7 @@ fun MiniPlayerBar(
                 }
 
                 // Controls
-                if (playbackStatus == PlaybackStatus.BUFFERING) {
+                if (playbackStatus.isBufferingOrConnecting) {
                     CircularProgressIndicator(
                         modifier = Modifier
                             .size(24.dp)
